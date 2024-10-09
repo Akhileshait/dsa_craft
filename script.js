@@ -56,32 +56,32 @@ class song {
   
   const result = [];
   
-  // function RecentlyPlayed() {
-  //   const recentlyPlayedList = document.getElementById("recentlyPlayed");
-  //   songs.forEach((song) => {
-  //     const li = document.createElement("li");
-  //     li.textContent = song.name;
-  //     recentlyPlayedList.appendChild(li);
-  //   });
-  // }
+  function RecentlyPlayed() {
+    const recentlyPlayedList = document.getElementById("recentlyPlayed");
+    songs.forEach((song) => {
+      const li = document.createElement("li");
+      li.textContent = song.name;
+      recentlyPlayedList.appendChild(li);
+    });
+  }
   
-  // function Artists() {
-  //      const artistsList = document.getElementById("artists");
-  //      songs.forEach(song => {
-  //               const li = document.createElement("li");
-  //               li.textContent = song.artist + "";
-  //               artistsList.appendChild(li);
-  //      });
-  //  }
+  function Artists() {
+       const artistsList = document.getElementById("artists");
+       songs.forEach(song => {
+                const li = document.createElement("li");
+                li.textContent = song.artist + "";
+                artistsList.appendChild(li);
+       });
+   }
   
-  // function Genres() {
-  //   const genresList = document.getElementById("genres");
-  //   songs.forEach((song) => {
-  //     const li = document.createElement("li");
-  //     li.textContent = song.genre;
-  //     genresList.appendChild(li);
-  //   });
-  // }
+  function Genres() {
+    const genresList = document.getElementById("genres");
+    songs.forEach((song) => {
+      const li = document.createElement("li");
+      li.textContent = song.genre;
+      genresList.appendChild(li);
+    });
+  }
   
   const fetchHistory = async () => {
     const data = { _id: "660f83a64a9c29b0e10bcadd" };
@@ -137,7 +137,7 @@ class song {
   
   recommend(songs);
   
-  // RecentlyPlayed();
-  // Artists();
-  // Genres();
+  RecentlyPlayed();
+  Artists();
+  Genres();
   // resultsong();
